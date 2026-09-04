@@ -42,8 +42,8 @@ def adding_numbers(e):
     document.getElementById("output1").innerHTML = ""     # clears previous output
     num1 = float(document.getElementById('input1').value) # get 1st output
     num2 = float(document.getElementById('input2').value) # get 2nd output
-    result_add = num1 + num2                                  # use operator to compute
-    display(result_add, target = "output1")                   # display output in div
+    result_add = num1 + num2                              # use operator to compute
+    display(result_add, target = "output1")               # display output in div
 
 def subtracting_numbers(e):
     document.getElementById("output2").innerHTML = ""     # clears previous output
