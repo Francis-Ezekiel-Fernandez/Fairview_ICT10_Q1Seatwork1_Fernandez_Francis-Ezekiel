@@ -30,10 +30,25 @@ aboutme ={
 
 display(aboutme, target="div7")
 
-fav_fruits = set(['Bananas','Avocados','Kiwis','Dragonfruit','Apples']) #set
+fav_fruits = set(["Bananas","Avocados","Kiwis","Dragonfruit","Apples"]) #set
 
 display(fav_fruits, target="div8")
 
-days_of_the_week = tuple(Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) #tuple
+days_of_the_week = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday") #tuple
 
 display(days_of_the_week, target="div9")
+
+def adding_numbers(e):
+    document.getElementById("output1").innerHTML = ""     # clears previous output
+    num1 = float(document.getElementById('input1').value) # get 1st output
+    num2 = float(document.getElementById('input2').value) # get 2nd output
+    result_add = num1 + num2                                  # use operator to compute
+    display(result_add, target = "output1")                   # display output in div
+
+def subtracting_numbers(e):
+    document.getElementById("output2").innerHTML = ""     # clears previous output
+    num1 = float(document.getElementById('input1').value) # get 1st output
+    num2 = float(document.getElementById('input2').value) # get 2nd output
+    result_subtract = num1 - num2                         # use operator to compute
+    display(result_subtract, target = "output2")          # display output in div
+
